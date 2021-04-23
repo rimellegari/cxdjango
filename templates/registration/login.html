@@ -13,10 +13,10 @@
 </head>
 <body>
     
-    <div class="topo"><h1>CXINFRA</h1></div>
-<section class='form-conatiner'>
+    <div class="topo"><h1>CX-Tracker</h1></div>
+<section class='form-container'>
     
-    <form method="post" action="{% url 'login' %}">
+    <form method="post" action="{% url 'home' %}">
         {% csrf_token %}
          
             
@@ -24,16 +24,22 @@
                 <label for="id_username">Usuário:</label>
                 <input type="text" id="id_username" autofocus autocomplete="username" required name='username' placeholder="username">
          
-         
+         <br>         <br>
+
 
         
                 <label for="id_password">Senha:</label>
                 <input type="password" id='id_password' required autocomplete="current-password" placeholder="senha">
+                <br>
+                <br>
+                <div class="btn-container"><input  id='btn' type="submit" value="Login"></div>
                 
-                    {# Assumes you setup the password_reset view in your URLconf #}
-                   <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
-    
-           
+                <br>
+                    <div class="recover">
+                        {# Assumes you setup the password_reset view in your URLconf #}
+                        <p><a href="{% url 'password_reset' %}">Lost password?</a></p>     
+                    </div>
+  
 
 
         

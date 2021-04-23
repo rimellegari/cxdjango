@@ -8,7 +8,7 @@
 label {
    display: inline-block;
     min-width: 120px;
-    text-align: right;
+    text-align: left;
 }
 
 form {
@@ -22,7 +22,7 @@ display: block;
 }
 .id-label {
     display: inline-block;
-    text-align: right;
+    text-align:left;
 }
 .entrada {
    display: block;
@@ -47,4 +47,38 @@ input {
     color: #fff;
     text-align: center;
     border: 0px;
+}
+
+#btn {
+    margin-left:30%;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    border: 0;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color:#334861;
+    color: #fff;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.recover {
+    text-align:center; 
+    vertical-align: middle;
+}
+
+@media (max-width: 400px) {
+    label {
+        display: block;
+    }
 }
